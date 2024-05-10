@@ -88,8 +88,8 @@ header > nav> a{
 .service > .ser{
     width:30%;
     height: 100px;
-    float: left;
-    margin: auto 10px;
+    text-align: center;
+    margin: 4px 2%;
     background-color: white;
     color:white;
     border-radius: 5px;
@@ -105,4 +105,58 @@ header > nav> a{
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 20px;
+}
+
+.portfolio {
+    background-image: linear-gradient(to bottom, #e74c3c, #c0392b); /* Set a gradient background for the portfolio section */
+    padding: 100px 0; /* Add padding to the portfolio section */
+    text-align: center; /* Align the portfolio content to the center */
+    color: #fff; /* Set the text color for the portfolio section */
+} 
+.contact{
+    background-image: linear-gradient(to bottom, #9b59b6, #8e44ad); /* Set a gradient background for the contact section */
+    color: #fff; /* Set the text color for the contact section */
+    padding: 100px 0; /* Add padding to the contact section */
+    text-align: center;
+}
+.contact h2 {
+    font-size: 36px; /* Set the font size for the contact title */
+    margin-bottom: 20px; /* Add margin at the bottom of the contact title */
+}
+.contact p {
+    font-size: 18px; /* Set the font size for the contact paragraph */
+    margin-bottom: 20px; /* Add margin at the bottom of the contact paragraph */
+}
+.contact form {
+    max-width: 600px; /* Set the maximum width for the contact form */
+    margin: 0 auto; /* Center the contact form horizontally */
+  }
+.contact input,
+  .contact textarea {
+    width: 100%; /* Set the width of the input fields and textarea to 100% */
+    padding: 10px; /* Add padding to the input fields and textarea */
+    margin-bottom: 20px; /* Add margin at the bottom of the input fields and textarea */
+    border-radius: 5px; /* Add border radius to the input fields and textarea */
+    border: 1px solid #ddd; /* Set the border style for the input fields and textarea */
+    font-size: 16px; /* Set the font size for the input fields and textarea */
+}
+.contact button {
+    background-image: linear-gradient(to bottom, #3498db, #2980b9); /* Set a gradient background for the contact button */
+    color: #fff; /* Set the text color for the contact button */
+    border: none; /* Remove border from the contact button */
+    padding: 10px 20px; /* Add padding to the contact button */
+    border-radius: 5px; /* Add border radius to the contact button */
+    font-size: 18px; /* Set the font size for the contact button */
+    cursor: pointer; /* Set cursor to pointer for the contact button */
+    transition: background-color 0.3s ease; /* Add transition effect to the background color of the contact button */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow to the contact button */
+}
+
+footer{
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-image:linear-gradient(to bottom, rgb(22, 21, 21),rgb(40, 39, 39)) ;
 }
