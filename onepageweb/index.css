@@ -52,3 +52,57 @@ header > nav> a{
     transition: background-color 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.about{
+    background-image:linear-gradient(to bottom,#27ae60,#27ae60);
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+.about > h1{
+    font-size: 48px; /* Set the font size for the hero title */
+    margin-bottom: 20px; /* Add margin at the bottom of the hero title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+.about> p{
+    font-size: 18px; /* Set the font size for the hero paragraph */
+    margin-bottom: 20px; /* Add margin at the bottom of the hero paragraph */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.service{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background-image: linear-gradient(to bottom, rgb(248, 196, 98),orange);
+    color: white;
+}
+.service > h1{
+    margin-bottom: 18px;
+    font-size: 48px;
+}
+
+.service > .ser{
+    width:30%;
+    height: 100px;
+    float: left;
+    margin: auto 10px;
+    background-color: white;
+    color:white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.service .ser:hover {
+    background-color: rgb(22, 17, 17); /* Change background color on hover for the service items */
+  }
+
+.ser > h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
