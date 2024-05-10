@@ -73,7 +73,7 @@ header > nav> a{
 }
 
 .service{
-    height: 400px;
+    height: 500px;
     width: 100%;
     text-align: center;
     padding: 100px 0;
@@ -86,13 +86,15 @@ header > nav> a{
 }
 
 .service > .ser{
-    width:30%;
-    height: 100px;
-    text-align: center;
-    margin: 4px 2%;
-    background-color: white;
-    color:white;
-    border-radius: 5px;
+    display: inline-block; /* Set the display to inline-block for the service items */
+    width: 30%; /* Set the width of the service items */
+    margin: 0 2%; /* Add margin around the service items */
+    padding: 30px; /* Add padding to the service items */
+    background-color: #fff; /* Set the background color for the service items */
+    border-radius: 5px; /* Add border radius to the service items */
+    margin-bottom: 20px; /* Add margin at the bottom of the service items */
+    vertical-align: top; /* Align the service items to the top */
+    transition: background-color 0.3s ease; /* Add transition effect to the service items */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     
 }
