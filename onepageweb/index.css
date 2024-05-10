@@ -20,3 +20,35 @@ header > nav> a{
     color: black;
     text-decoration: none;
 }
+.hero{
+    height: 300px;
+    width: 100%;
+    background-color:rgb(55, 55, 186);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+.hero > h1{
+    font-size: 48px; /* Set the font size for the hero title */
+    margin-bottom: 20px; /* Add margin at the bottom of the hero title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.hero > p{
+    font-size: 18px; /* Set the font size for the hero paragraph */
+    margin-bottom: 20px; /* Add margin at the bottom of the hero paragraph */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero> button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
