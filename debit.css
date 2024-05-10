@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+body{
+    background-image: linear-gradient( rgb(77, 76, 76),rgb(77, 76, 76));
+    
+}
+
+.debit_background{
+    background-image:linear-gradient(black,black);
+    height: 200px;
+    width:350px;
+    margin:150px auto;
+    border-radius: 10px;
+}
+
+.design-line{
+    border:5px solid white;
+    padding-top: 3px;
+    
+}
+     
