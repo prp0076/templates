@@ -12,15 +12,133 @@ body{
 
 .debit_background{
     background-image:linear-gradient(black,black);
-    height: 200px;
+    height: 220px;
     width:350px;
     margin:150px auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-.design-line{
-    border:5px solid white;
-    padding-top: 3px;
-    
-}
+
      
+.design{
+    position: absolute;
+    top: 130px;
+    left: 680px;
+}
+
+.outer-circle {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background-color: #424345; /* Just for visibility */
+    border-radius: 0 100% 0 0; /* Quarter circle (top right) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg); /* Rotate by 90 degrees */
+    opacity: 0.3;
+}
+
+.middle-circle {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    background-color: #5f6365; /* Just for visibility */
+    border-radius: 0 100% 0 0; /* Quarter circle (top right) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    
+     /* Rotate by 90 degrees */
+}
+
+.inner-circle {
+    width: 110px; /* Adjust width as needed */
+    height: 110px; /* Adjust height as needed */
+    background-color: #555a55; /* Just for visibility */
+    border-radius: 0 100% 0 0; /* Quarter circle (top right) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    top: 35px;
+    left: -4px;
+}
+
+.debit-card-body{
+    width: 350px;
+    height: 200px;
+}
+.debit-card-body > h1{
+    padding: 15px;
+    font-size: 22px;
+}
+.debit-card-body  p{
+    
+
+}
+.second-line{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+   
+}
+.second-line p{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.card_number p{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.card_validation_line{
+    display: flex;
+    justify-content: space-between;
+}
+.card_validation_line p{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.card_validation_line .date{
+    margin-right: 15px;
+}
+.User_Name_Circle{
+    display: flex;
+    justify-content: space-between;
+}
+.User_Name_Circle p{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.circle {
+    display: flex;
+    margin-top: 10px;
+    overflow: hidden; /* Ensures anything outside the container is hidden */
+}
+
+.circle-one {
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    border-radius: 50%;
+    margin-right: -10px; /* Adjust this value to control the intersection */
+}
+
+.circle-two {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 187, 0);
+    border-radius: 50%;
+    margin-right: 15px;
+}
