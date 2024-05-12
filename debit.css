@@ -18,7 +18,9 @@ body{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1px 1px 15px 4px  #000000;
-
+    animation-name: rotate; /* Apply the rotate animation */
+    animation-duration: 4s; /* Set the duration of the animation */
+    animation-iteration-count: infinite; /* Make the animation loop infinitely */
 }
 
 
@@ -146,3 +148,38 @@ img{
     border-radius: 50%;
     margin-right: 15px;
 }
+
+@keyframes rotate {
+    /* From and to keyframes */
+    from,
+    to {
+        animation-timing-function: ease-in; /* Animation timing function */
+        /* Set box shadow for 3D effect */
+        box-shadow:
+            0 0 0 hsl(0,0%,80%),
+            0.1rem 0 0 hsl(0,0%,100%),
+            -0.2rem 0 0.75rem 0 hsla(0,0%,0%,0.3);
+        transform: rotateY(-20deg); /* Apply Y-axis rotation */
+    }
+    /* Keyframes at 25% and 75% */
+    25%,
+    75% {
+        animation-timing-function: ease-out; /* Animation timing function */
+        /* Set box shadow for 3D effect */
+        box-shadow:
+            0 0 0 hsl(0,0%,80%),
+            0 0 0 hsl(0,0%,100%),
+            -0.25rem -0.05rem 1rem 0.15rem hsla(0,0%,0%,0.3);
+        transform: rotateY(0deg); /* Reset rotation */
+    }
+    /* Keyframe at 50% */
+    50% {
+        animation-timing-function: ease-in; /* Animation timing function */
+        /* Set box shadow for 3D effect */
+        box-shadow:
+            -0.1rem 0 0 hsl(0,0%,80%),
+            0 0 0 hsl(0,0%,100%),
+            -0.3rem -0.1rem 1.5rem 0.3rem hsla(0,0%,0%,0.3);
+        transform: rotateY(20deg); /* Apply Y-axis rotation */
+    }
+  }
