@@ -227,8 +227,16 @@ header .outer-ul-li:hover > ul{
   }
 
 
-
-
+footer{
+    background-color: #00796b;
+    padding: 20px;
+    text-align: center;
+    animation: slideInUp 0.5s ease;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+}
   /*animation  */
   @keyframes fadeIn {
     from {
@@ -245,5 +253,16 @@ header .outer-ul-li:hover > ul{
     }
     to {
         transform: scale(1);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
   }
