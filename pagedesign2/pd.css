@@ -65,6 +65,7 @@ header .outer-ul-li:hover > ul{
     flex-direction: column;
     justify-content: center;  
     text-align: center;  
+    animation: zoomIn 0.5s ease;
 }
 
 .banner-content{
@@ -223,4 +224,26 @@ header .outer-ul-li:hover > ul{
 
 .form-group input[type="submit"]:hover {
     background-color: #005b4f; /* Darker teal on hover */
+  }
+
+
+
+
+  /*animation  */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
   }
