@@ -22,6 +22,7 @@ header .outer-ul{
     margin: 0 10px;
     font-size: 16px;
     display: inline-block;
+    position: relative;
 }
 .outer-ul-li a{
     text-decoration: none;
@@ -33,3 +34,69 @@ header .outer-ul{
  text-decoration:underline;
  transform: translateY(-3px);
 }
+
+
+ul ul{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: #00796b;
+    left: 0;
+    top: 100%;
+    transition: all 0.3s ease;
+}
+ul ul li:first-child{
+    padding-top: 10px;
+}
+
+header .outer-ul-li:hover > ul{
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+
+/* banner section */
+
+.banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    text-align: center;  
+}
+
+.banner-content{
+    margin: auto;
+}
+
+.banner-content h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-content p{
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.banner-content button{
+    background-color: #00796b;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer ;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover{
+    background-color: #005b4f;
+    transform: scale(1.1);
+}
+
+
+/*  */
