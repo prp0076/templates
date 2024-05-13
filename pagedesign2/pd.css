@@ -102,19 +102,26 @@ header .outer-ul-li:hover > ul{
 /* vcard */
 
 .card-parent{
-    background-color:rgb(203, 200, 200);
+    background-color:rgb(222, 215, 215);
     padding: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .card-body{
     width: 300px;
     height: 420px;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+}
+.card-body:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
 
 .card-img{
@@ -154,4 +161,66 @@ header .outer-ul-li:hover > ul{
 .card-text button:hover{
     background-color: #005b4f;
     transform: scale(1.1);
-} 
+}
+
+/* form section */
+.form-section{
+    padding: 50px;
+    animation: fadeIn 0.5s ease;
+}
+
+.form-section .contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(222, 215, 215);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 50px;
+}
+.contact-form:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+    margin-bottom: 20px;
+  }
+.contact-form h3{
+    color: black;
+    margin-bottom: 20px;
+}  
+.message, .name, .email{
+    color: black;
+}
+
+.form-group input[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+
+.form-group input[type="submit"]:hover {
+    background-color: #005b4f; /* Darker teal on hover */
+  }
