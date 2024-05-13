@@ -99,4 +99,59 @@ header .outer-ul-li:hover > ul{
 }
 
 
-/*  */
+/* vcard */
+
+.card-parent{
+    background-color:rgb(203, 200, 200);
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-body{
+    width: 300px;
+    height: 420px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.card-img{
+    height: 200px;
+    width: 300px;
+}
+.card-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body .card-text{
+    padding: 20px;
+    
+}
+.card-text h3{
+    font-size: 24px;
+    margin: 10px;
+    color: black;
+}
+.card-text p{
+    font-size: 16px;
+    margin: 10px;
+    color: black;
+}
+.card-text button{
+    background-color: #00796b;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer ;
+    margin:10px;
+    transition: background-color 0.3s ease;
+}
+.card-text button:hover{
+    background-color: #005b4f;
+    transform: scale(1.1);
+} 
